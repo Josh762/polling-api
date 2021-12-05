@@ -1,0 +1,19 @@
+
+@host="localhost:8000"
+@base-route="polls"
+
+GET http://localhost:8000/polls/1
+
+//
+POST http://localhost:8000/polls/
+
+{
+  "id": "string",
+  "title": "string",
+  "options": [
+    "string"
+  ],
+  "allowMultipleAnswers": true,
+  "botPrevention": true,
+  "responsePolicy": "IP"
+}
